@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STANDINGS</title>
+    <link rel="stylesheet" href="http://localhost:3001/main.css">
+    <link rel="stylesheet" href="http://localhost:3001/standings.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <p>GOA SUPER LEAGUE</p>
+            </div>
+            <ul class="navbar">
+                <li><a href="home#">HOME</a></li>
+                <li><a href="team#" >TEAMS</a></li>
+                <li><a href="result#">RESULTS</a></li>
+                <li><a href="#" class="active">STANDINGS</a></li>
+                <li><a href="player#">PLAYERS</a></li>
+                <li><a href="home##ABOUT">ABOUT</a></li>
+            </ul>
+            <button type="button" id="btn"><i class="fas fa-play"></i></button>
+        </header>
+        <div class="teamList">
+            <table>
+                <tr class="tr1">
+                    <th class="team">Team name</th>
+                    <th class="wins">Wins</th>
+                    <th class="points">Points</th>
+                </tr>
+                <% for (var i = 0; i < results.length; i++) { %>
+                <tr>
+                            <td class="team"><%= results[i].Team_name %> </td>
+                            <td class="wins"><%= results[i].wins %> </td>
+                            <td class="points"><%= results[i].points %> </td>
+                </tr>
+                <% } %>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

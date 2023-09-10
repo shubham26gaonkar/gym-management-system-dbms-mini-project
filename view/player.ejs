@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams</title>
+    <link rel="stylesheet" href="http://localhost:3001/main.css">
+    <link rel="stylesheet" href="http://localhost:3001/player.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <p>GOA SUPER LEAGUE</p>
+            </div>
+            <ul class="navbar">
+                <li><a href="home#">HOME</a></li>
+                <li><a href="team#">TEAMS</a></li>
+                <li><a href="result#">RESULTS</a></li>
+                <li><a href="standings#">STANDINGS</a></li>
+                <li><a href="#" class="active">PLAYERS</a></li>
+                <li><a href="home##ABOUT">ABOUT</a></li>
+            </ul>
+            <button type="button" id="btn"><i class="fas fa-play"></i></button>
+        </header>
+        <div class="playerList">
+            <% for (var i = 0; i < results.length; i++) { %>
+            <div class="pp">
+                <img src="http://localhost:3001/player.png" alt="" srcset="">
+                <div class="topData">
+                    <span class="pno"><%= results[i].Jersey_no %> </span>
+                    <div class="nt">
+                        <span class="pname"><%= results[i].P_name %>  </span>
+                        <span class="pteam"><%= results[i].Team_name %> </span>
+                    </div>
+                </div>
+                <div class="other">
+                    <span class="page">AGE: <%= results[i].age %> </span>
+                    <span class="pcountry">Country: <%= results[i].Nationality %> </span>
+                    
+                </div>
+                <span class="pposition">Position: <%= results[i].Position %></span>
+                
+            </div>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+

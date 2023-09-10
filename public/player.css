@@ -1,0 +1,52 @@
+.pp{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    text-align: center;
+    background: linear-gradient(rgb(141 123 15 / 58%),rgb(61 24 103));
+    padding: 0.75rem;
+    border-radius: 1rem;
+}
+
+
+.playerList{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    padding: 2rem 3rem;
+}
+
+.pno{
+    color: aliceblue;
+    font-size: 4.5rem;
+}
+
+.pname{
+    font-size: 1.25rem;
+    margin: 0.5rem;
+    font-weight: bold;
+}
+
+.image{
+    width: 10rem;
+    height: 10rem;
+    background: url(player.png);
+}
+
+.topData{
+    display: flex;
+    justify-content: center;
+}
+
+.nt{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+.other{
+    display: flex;
+    justify-content: space-evenly;
+    padding: .7rem;
+    padding-top: 0;
+}

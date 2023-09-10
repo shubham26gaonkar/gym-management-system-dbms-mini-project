@@ -1,0 +1,118 @@
+body{
+    height: 200vh;
+}
+/* Content desc starts here */
+.content-wrapper{
+    width: 80%;
+    min-height: 85vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.content-desc h1{
+    font-size: 3.25rem;
+    margin-bottom: 10px;
+}
+.content-desc p{
+    width: 550px;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-bottom: 10px;
+}
+.content-desc span{
+    color: #FEC53A;
+}
+#btn2{
+    width: 350px;
+    height: 10vh;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    background: #FEC53A;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+    clip-path: polygon(0 0, 74% 0, 100% 100%, 0% 100%);
+    border-radius: 20px;
+    text-align: left;
+}
+
+.trophy{
+    width: 45rem;
+    height: 25rem;
+    background-repeat: no-repeat;
+}
+
+/* Middle strip */
+
+.logo-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+.logo-section .fas{
+    font-size: 6rem;
+    color: #FEC53A;
+}
+.logo-section h1{
+    width: 250px;
+    font-size: 2rem;
+    color: #FEC53A;
+    margin-left: 10px;
+}
+
+
+/* Section one starts here */
+
+.section-1{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.767),rgba(0, 0, 0, 0.712)),
+    url(bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.section-1-wrapper{
+    width: 80%;
+    min-height: 80vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.section-1 h1{
+    width: 500px;
+    color: #FEC53A;
+    font-size: 2.5rem;
+    position: relative;
+    font-weight: 400;
+}
+
+.footer{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FEC53A;
+}
+.footer .fas{
+    font-size: 6rem;
+    color: #FEC53A;
+}
+.footer h1{
+    padding-top: 70px;
+    width: 346px;
+    font-size: 1rem;
+    color: #000000;
+    margin-left: 10px;
+}

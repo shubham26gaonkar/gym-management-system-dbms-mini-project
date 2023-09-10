@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams</title>
+    <link rel="stylesheet" href="http://localhost:3001/main.css">
+    <link rel="stylesheet" href="http://localhost:3001/team.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <p>GOA SUPER LEAGUE</p>
+            </div>
+            <ul class="navbar">
+                <li><a href="home#">HOME</a></li>
+                <li><a href="#" class="active">TEAMS</a></li>
+                <li><a href="result#">RESULTS</a></li>
+                <li><a href="standings#">STANDINGS</a></li>
+                <li><a href="player#">PLAYERS</a></li>
+                <li><a href="home##ABOUT">ABOUT</a></li>
+            </ul>
+            <button type="button" id="btn"><i class="fas fa-play"></i></button>
+        </header>
+        <div class="teamList">
+            <table>
+                <tr>
+                    <th class="Tlogo">Logo</th>
+                    <th class="team">Team name</th>
+                    <th class="city">City</th>
+                </tr>
+                <% for (var i = 0; i < teams.length; i++) { %>
+                <tr>
+                    <td class="Tlogo"><img src="data:image/png;base64,<%= teams[i].logoBase %>"></td>
+                    <td class="team"><%= teams[i].Team_name %></td>
+                    <td class="city"><%= teams[i].city %></td>
+                </tr>
+                <% } %>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams</title>
+    <link rel="stylesheet" href="http://localhost:3001/main.css">
+    <link rel="stylesheet" href="http://localhost:3001/result.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <p>GOA SUPER LEAGUE</p>
+            </div>
+            <ul class="navbar">
+                <li><a href="home#">HOME</a></li>
+                <li><a href="team#">TEAMS</a></li>
+                <li><a href="#" class="active">RESULTS</a></li>
+                <li><a href="standings#">STANDINGS</a></li>
+                <li><a href="player#">PLAYERS</a></li>
+                <li><a href="home#ABOUT">ABOUT</a></li>
+            </ul>
+            <button type="button" id="btn"><i class="fas fa-play"></i></button>
+        </header>
+        <div class="resultList">
+            <% teams.forEach(team => { %>
+                
+            <div class="result">
+                <h1>FULL TIME</h1>
+                <div class="teamalign" >
+                    <div class="team1">
+                        <img class="teamImage" src="data:image/png;base64, <%= team.T1_Logo %>">
+
+                        <span class="team1 data">  <%= team.T1 %> </span>
+                    </div>
+                    
+                    <div class="team2">
+                        
+                        <img class="teamImage" src="data:image/png;base64, <%= team.T2_Logo %>">
+                        <span class="team2 data"> <%= team.T2 %> </span>
+
+                    </div>
+                </div>
+                
+                <div class="goals">
+                    <span class="goals data">  <%= team.Goal %> </span>
+                </div>
+                <span class="location">At <br> <%= team.sname %></span>
+                
+            </div>
+            
+            <% }) %>
+        </div>
+    </div>
+</body>
+</html>
